@@ -1,0 +1,14 @@
+pymongo[srv]>=4.6.0
+pandas>=2.0.0
+numpy>=1.24.0
+joblib>=1.3.0
+python-dotenv>=1.0.0
+fastapi
+uvicorn
+kafka-python-ng
+python-socketio
+requests
+xgboost
+lightgbm
+scikit-learn
+confluent-kafka
