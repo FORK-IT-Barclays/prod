@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Institutional Palette - Muted & Purposeful */
+  --bg-dark: #020617;
+  --bg-card: #0f172a;
+  --bg-surface: #1e293b;
+
+  --primary: #38bdf8;
+  --primary-glow: rgba(56, 189, 248, 0.15);
+
+  /* Financial Tiers - Professional Semantics */
+  --tier-3: #f43f5e;
+  /* Rose instead of pure red */
+  --tier-3-soft: rgba(244, 63, 94, 0.08);
+  --tier-2: #fbbf24;
+  /* Amber */
+  --tier-2-soft: rgba(251, 191, 36, 0.08);
+  --tier-1: #10b981;
+  /* Emerald */
+  --tier-1-soft: rgba(16, 185, 129, 0.08);
+
+  /* Typography */
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --text-dim: #475569;
+
+  --border: rgba(255, 255, 255, 0.06);
+  --border-focus: rgba(56, 189, 248, 0.4);
+
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  font-weight: 200;
+
+  color-scheme: dark;
+  color: var(--text-main);
+  background-color: var(--bg-dark);
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #010409;
+}
+
+#root {
+  width: 100%;
+}
+
+/* Institutional Utilities */
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.02em;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-red {
+  color: var(--tier-3);
+}
+
+.text-amber {
+  color: var(--tier-2);
+}
+
+.text-green {
+  color: var(--tier-1);
+}
+
+.text-dim {
+  color: var(--text-dim);
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+/* Custom Scrollbar - Minimal Institutional */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-dim);
+}
+
+/* Animation Keyframes */
+@keyframes pulse-subtle {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}
